@@ -1,22 +1,25 @@
 <template>
-  <div >
+  <div id="app">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import { ref, defineAsyncComponent } from 'vue';
-
 export default {
   setup() {
-    let a = ref('bb')
-    return {
-      a
-    }
+    
   }
 }
 </script>
 
-<style scoped>
-
+<style>
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+  #app{
+    width:100vw;
+    height: 100vh;
+    background: rgb(167, 160, 160);
+  }
 </style>

@@ -54,7 +54,7 @@ module.exports = {
       library: { type: "var", name: "ms1" },
       filename: "ccc.js",
       exposes: {
-        "./msModule": "./src/msModule.vue",
+        "./tools": "./src/tools.vue",
       },
     })
   ],

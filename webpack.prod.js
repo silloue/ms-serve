@@ -6,9 +6,5 @@ const webpack = require('webpack') // 引入webpack
 
 module.exports = merge.merge(common, {
   devtool: 'inline-source-map', 
-  devServer: {
-    hot: true,
-    port:8000
-  },
   mode: 'production',
 })

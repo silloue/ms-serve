@@ -1,16 +1,17 @@
 {
   "name": "ms-server",
   "version": "1.0.1",
-  "description": "",
+  "description": "micro serve cli",
   "main": "main.js",
   "scripts": {
     "serve": "concurrently \"npm run main\" \"npm run ms1\"",
     "prepares": "npm i && cd ./ms/ms1 && npm i",
     "main": "webpack-dev-server --config webpack.dev.js",
     "ms1": "cd ./ms/ms1 && npm run dev",
-    "build": "webpack --config ./webpack.prod.js"
+    "build": "webpack --config ./webpack.prod.js",
+    "resetpacket": "node ms.config.js"
   },
-  "author": "",
+  "author": "silloue",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
